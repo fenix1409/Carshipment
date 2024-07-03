@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/sitelogo.svg">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Carshipment</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header">
+                <a class="header__logo-link" href="/">
+                    <img src="./images/headerlogo.svg" alt="Header Logo" width="245" height="43">
+                </a>
+                <div class="header__links-wrapper">
+                    <ul class="header__list navbar">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">HOME</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">SERVICES</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">SHIPPING METHODS</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <a class="header__phone-link" href="tel:2242182949">
+                        <img src="./images/telllogo.svg" alt="Call Logo" width="38" height="38">
+                        <span class="header__phone-number">224-218-2949</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero">
+                <form class="hero__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off" target="_blank">
+                    <strong class="hero__form-subtitle">Shipping Cost Calculator</strong>
+                    <p class="hero__form-subtext">Get your estimate quote in seconds</p>
+                    <hr>
+                    <h2 class="hero__form-title">From</h2>
+                    <input class="hero__form-input" type="number" placeholder="Select ZIP code or location" name="user__choose-location" required>
+                    <h2 class="hero__form-title">To</h2>
+                    <input class="hero__form-input" type="number" placeholder="Select ZIP code or location" name="user__choose-location" required>
+                    <h2 class="hero__form-title">Estimate time</h2>
+                    <input class="hero__form-input" type="date" placeholder="Select estimate time" name="user__select-time" required>
+                    <h2 class="hero__form-title">Transport type</h2>
+                    <label class="form__input">
+                        <input class="hero__form-radio" type="radio" placeholder="Open" name="user__transport-type" required />
+                        Open
+                    </label>
+                    <label class="form__input">
+                        <input class="hero__form-radio" type="radio" placeholder="Enclosed" name="user__transport-type" required />
+                        Enclosed 
+                    </label>
+                    <hr class="form__hr">
+                    <button class="hero__submit-btn" type="submit">Get Shipment estimate</button>
+                </form>
+                <div class="hero__content-wrapper">
+                    <strong class="hero__subtitle"><span>
+                        <img src="./images/star.svg" alt="Star Img" width="24" height="24">
+                    </span> World Top Rated Shipping Company</strong>
+                    <h1 class="hero__title">Transportation Services that you can trust</h1>
+                    <p class="hero__text">Transport your vehicle with PROs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
