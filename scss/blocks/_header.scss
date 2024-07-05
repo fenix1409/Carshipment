@@ -1,0 +1,62 @@
+.site-header {
+    padding: 20px 0;
+    background-color: #0000004D;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(20px);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo-link {
+    display: inline-block;
+    
+}
+.header__links-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navbar__link {
+    color: $white-clr;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    transition: color 0.3s linear;
+}
+.navbar__link:hover{
+    color: $orange-clr;
+}
+.navbar__link:active{
+    color: $orange-clr;
+    opacity: 0.5;
+}
+.header__phone-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header__phone-number {
+    color: $white-clr;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    transition: all 0.3s linear;
+}
+.header__phone-number:hover{
+    color: $orange-clr;
+}
+.header__phone-number:active{
+    color: $orange-clr;
+    opacity: 0.5;
+}
