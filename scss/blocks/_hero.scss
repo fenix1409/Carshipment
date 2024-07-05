@@ -29,14 +29,14 @@
 .hero__form-subtext {
     margin-bottom: 20px;
     color: $white-clr;
-    font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0%;
 }
 .hero__form-title {
-    margin-top: 25px;
+    display: flex;
+    margin-top: 15px;
     color: $white-clr;
     font-size: 15px;
     font-weight: 400;
@@ -57,12 +57,19 @@
     width: 399px;
     height: 56px;
     margin-top: 12px;
-    padding: 25px 40px;
+    padding: 18px 5px 18px 47px;
     border-radius: 12px;
     border: 1px solid $orange-clr;
     background-color: $white-clr;
     border: none;
     outline: none;
+    background-image: url(../../images/location.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 15px center;
+}
+.form__label:nth-last-child(2) > .hero__form-input{
+    background-image: url(../../images/calendar_line\ 1.svg);
 }
 .hero__form-input:focus{
     box-shadow: 0 0 5px 0 $orange-clr;

@@ -1,6 +1,9 @@
 
 .service-section {
     padding: 113px 0 173px;
+    background-image: url(../../images/service-bg.png) , url(../../images/service-bg2.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
 }
 .service__title-wrapper {
     text-align: center;
@@ -8,29 +11,53 @@
 }
 .service__title {
     margin-bottom: 8px;
-font-size: 38px;
-font-weight: 700;
-line-height: 45.99px;
-color: black;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    color: black;
 }
 .service__text {
-   color: #000000AD;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+    color: #000000AD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
-
+.service__list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 .service__item {
     position: relative;
     width: 354px;
     height: 458px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 50;
+    --tw-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
+background: rgb(183, 183, 183);
+    
+
+    &:hover > .service__img{
+        height: 50%;
+        
+    }
+    
+    &:hover > .service__hide-content{
+        bottom: 0;
+    }
+    &:hover > .service__view-content{
+        bottom: -100%;
+    }
 }
 .service__img{
-position: absolute;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 4;
+    transition: all 0.3s ease-out;
 }
 .service__view-content {
     padding: 24px 20px 20px;
@@ -38,19 +65,47 @@ z-index: 4;
     z-index: 5;
     bottom: 0;
 }
-.service-subtitle {
+.service__subtitle {
+    color: white;
     margin-bottom: 15px;
-font-size: 24px;
-font-weight: 700;
-line-height: 29.05px;
-color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
 }
 .service__item-link {
     color: white;
-font-size: 15px;
-font-weight: 500;
-line-height: 18.15px;
-display: flex;
-align-items: center;
-gap: 6.5px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.15px;
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+}
+.service__hide-content {
+    position: absolute;
+    transition: all 0.3s ease-out;
+    bottom: -100%;
+    height: 50%;
+    padding: 20px;
+    background-color: white;
+    z-index: 5;
+    
+    & > h3{
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.05px;
+        color: black;
+    }
+    
+    & > p{
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: black;
+    }
+}
+.service__hide-link {
+    color: $orange-clr;
 }

@@ -4,6 +4,7 @@
     position: fixed;
     width: 100%;
     backdrop-filter: blur(20px);
+    z-index: 100;
 }
 .header {
     display: flex;
@@ -12,7 +13,6 @@
 }
 .header__logo-link {
     display: inline-block;
-    
 }
 .header__links-wrapper{
     display: flex;
