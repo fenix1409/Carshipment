@@ -400,6 +400,9 @@ body {
 }
 
 .service__hide-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: #FF7D44;
 }
 

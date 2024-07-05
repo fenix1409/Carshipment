@@ -107,5 +107,8 @@ background: rgb(183, 183, 183);
     }
 }
 .service__hide-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: $orange-clr;
 }
