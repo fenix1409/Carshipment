@@ -26,9 +26,12 @@
     cursor: pointer;
     overflow: hidden;
 
+
+    &:hover{
+        box-shadow: 0 0 2px 2px grey;
+    }
     &:hover > .service__img{
         height: 50%;
-        
     }
     
     &:hover > .service__hide-content{

@@ -340,6 +340,9 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
+.service__item:hover {
+  box-shadow: 0 0 2px 2px grey;
+}
 .service__item:hover > .service__img {
   height: 50%;
 }
