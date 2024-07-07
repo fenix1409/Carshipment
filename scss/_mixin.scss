@@ -1,0 +1,29 @@
+@mixin dislpay($DF, $AI, $JC, $GAP){
+    display: $DF;
+    align-items: $AI;
+    justify-content: $JC;
+    gap: $GAP;
+}
+@mixin textStyle($MB, $FS, $FW, $CLR, $LH, $CASE){
+    margin-bottom: $MB;
+    font-size: $FS;
+    font-weight: $FW;
+    color: $CLR;
+    line-height: $LH;
+    text-transform: $CASE;
+}
+@mixin buttonsytle($W, $P, $BR_RAD, $BG_CLR, $CLR, $FS, $FW, $LH, $BORDER){
+    width: $W;
+    padding: $P;
+    border-radius: $BR_RAD;
+    background-color: $BG_CLR;
+    color: $CLR;
+    font-size: $FS;
+    font-weight: $FW;
+    line-height: $LH;
+    letter-spacing: 0%;
+    text-align: center;
+    border: $BORDER;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}

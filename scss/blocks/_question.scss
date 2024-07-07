@@ -1,0 +1,16 @@
+.question-section {
+    padding: 80px 0 75px;
+}
+.question__content-wrapper {
+    margin-bottom: 80px;
+    text-align: center;
+}
+.question-title {
+  @include textStyle($MB: 15px, $FS: 38px, $FW: 700, $CLR: black, $LH: 46px, $CASE: capitalize);
+}
+.question-title---color {
+    color: $orange-clr;
+}
+.question-text {
+    @include textStyle($MB: 0, $FS: 16px, $FW: 400, $CLR: rgba(0, 0, 0, 0.68), $LH: 24px, $CASE: none);
+}

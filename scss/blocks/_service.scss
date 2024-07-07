@@ -10,23 +10,14 @@
     margin-bottom: 100px;
 }
 .service__title {
-    margin-bottom: 8px;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 45.99px;
-    color: black;
+    @include textStyle($MB: 8px, $FS: 38px, $FW: 700, $CLR: black, $LH: 45.99px, $CASE: capitalize);
 }
 .service__text {
-    color: #000000AD;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    @include textStyle($MB: 0, $FS: 16px, $FW: 400, $CLR: black, $LH: 24px, $CASE: capitalize);
 }
 .service__list{
-    display: flex;
-    justify-content: center;
+    @include dislpay($DF: flex, $AI: center, $JC: center, $GAP: 25px);
     flex-wrap: wrap;
-    gap: 25px;
 }
 .service__item {
     position: relative;
@@ -34,10 +25,6 @@
     height: 458px;
     cursor: pointer;
     overflow: hidden;
-    z-index: 50;
-    --tw-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
-background: rgb(183, 183, 183);
-    
 
     &:hover > .service__img{
         height: 50%;
@@ -66,17 +53,10 @@ background: rgb(183, 183, 183);
     bottom: 0;
 }
 .service__subtitle {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29.05px;
+    @include textStyle($MB: 15px, $FS: 24px, $FW: 700, $CLR: $white-clr, $LH: 24px, $CASE: capitalize);
 }
 .service__item-link {
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 18.15px;
+    @include textStyle($MB: 0, $FS: 15px, $FW: 500, $CLR: $white-clr, $LH: 18.15px, $CASE: capitalize);
     display: flex;
     align-items: center;
     gap: 6.5px;
@@ -107,8 +87,6 @@ background: rgb(183, 183, 183);
     }
 }
 .service__hide-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @include dislpay($DF: flex, $AI: center, $JC: start, $GAP: 10px);
     color: $orange-clr;
 }
