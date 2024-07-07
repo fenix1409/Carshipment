@@ -55,6 +55,10 @@
     position: absolute;
     display: block;
     top: 1.25em;
+
+    &:hover{
+        background-color: rgb(165, 61, 16);
+    }
 }
 .information__wrapper{
     width: 545px;
@@ -79,20 +83,21 @@
     width: 259px;
     display: inline-block;
     padding: 15px 0;
-    color: rgba(0, 0, 0, 0.87);
+    color: black;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0%;
     text-transform: uppercase;
-    border: 1px solid rgb(255, 125, 68);
+    border: 3px solid rgb(255, 125, 68);
     border-radius: 3px;
     transition: all 0.3s linear;
 }
 .information__link:hover{
-    color: white;
-    background-color: $orange-clr;
+    color: black;
+    background-color: rgb(246, 204, 186);
+    border-color: rgb(255, 125, 68);
 }
 .information__link:active{
     opacity: 0.5;
