@@ -157,10 +157,10 @@
    * 2. Remove the margin in Firefox and Safari.
    */
   
-  button,
-  input,
-  optgroup,
-  select,
+   button,
+   input,
+   optgroup,
+   select,
   textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 1 */
