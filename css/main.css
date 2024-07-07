@@ -150,7 +150,7 @@ body {
 
 .hero {
   display: flex;
-  align-items: center;
+  align-items: unset;
   justify-content: space-between;
   gap: 85px;
 }
@@ -241,7 +241,7 @@ body {
 
 .hero__submit-btn {
   width: 399px;
-  padding: 10px 0;
+  padding: 17px 0;
   border-radius: 8px;
   background-color: #FF7D44;
   color: #FFFFFF;
@@ -250,7 +250,7 @@ body {
   line-height: 21px;
   letter-spacing: 0%;
   text-align: center;
-  border: 1 px solid #FF7D44;
+  border: none;
   cursor: pointer;
   transition: all 0.2s linear;
 }
@@ -513,7 +513,7 @@ body {
   margin-bottom: 16px;
   font-size: 38px;
   font-weight: 700;
-  color: black;
+  color: #FF7D44;
   line-height: 46px;
   text-transform: none;
 }

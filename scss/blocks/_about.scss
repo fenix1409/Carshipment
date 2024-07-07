@@ -14,7 +14,7 @@
     @include textStyle($MB: 16px, $FS: 38px, $FW: 700, $CLR: black, $LH: 46px, $CASE: none);
 }
 .about__subtitle {
-    @include textStyle($MB: 16px, $FS: 38px, $FW: 700, $CLR: black, $LH: 46px, $CASE: none);
+    @include textStyle($MB: 16px, $FS: 38px, $FW: 700, $CLR: $orange-clr, $LH: 46px, $CASE: none);
 }
 .about__text {
     @include textStyle($MB: 50px, $FS: 16px, $FW: 300, $CLR: rgba(0, 0, 0, 0.68), $LH: 24px, $CASE: none);

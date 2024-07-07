@@ -8,7 +8,7 @@
     background-attachment: fixed;
 }
 .hero {
-    @include dislpay($DF: flex, $AI: center, $JC: space-between, $GAP: 85px);
+    @include dislpay($DF: flex, $AI: unset, $JC: space-between, $GAP: 85px);
 }
 .hero__form {
     width: 449px;
@@ -70,7 +70,7 @@
     margin: 24px 0 20px;
 }
 .hero__submit-btn{
-    @include buttonsytle($W:399px, $P: 10px, $BR_RAD: 8px, $BG_CLR: $orange-clr, $CLR: $white-clr, $FS: 17px, $FW: 500, $LH: 21px, $BORDER: 1 px solid $orange-clr);
+    @include buttonsytle($W:399px, $P: 17px, $BR_RAD: 8px, $BG_CLR: $orange-clr, $CLR: $white-clr, $FS: 17px, $FW: 500, $LH: 21px, $BORDER: none);
 }
 .hero__submit-btn:hover{
     color: $orange-clr;
