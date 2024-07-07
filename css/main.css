@@ -236,7 +236,7 @@ body {
 
 .hero__submit-btn {
   width: 399px;
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 8px;
   background-color: #FF7D44;
   color: #FFFFFF;
@@ -575,6 +575,29 @@ body {
   flex-direction: row-reverse;
 }
 
+.shipping__img-wrapper {
+  position: relative;
+}
+
+.shipping__link {
+  width: 151px;
+  padding: 16px 0;
+  border-radius: 0;
+  background-color: #FF7D44;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: absolute;
+  display: block;
+  top: 1.25em;
+}
+
 .information__wrapper {
   width: 545px;
 }
@@ -662,6 +685,7 @@ body {
   padding-bottom: 25px;
   border-bottom: 1px solid #D9D9D9;
   overflow-y: hidden;
+  cursor: pointer;
 }
 
 .dropdown__heading {

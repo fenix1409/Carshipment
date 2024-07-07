@@ -22,6 +22,7 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #D9D9D9;
     overflow-y: hidden;
+    cursor: pointer;
 }
 .dropdown__heading {
     @include dislpay($DF: flex, $AI: center, $JC: space-between, $GAP: 0px);
@@ -59,7 +60,6 @@
 .dropdown__hide-text {
     @include textStyle($MB: 0, $FS: 16px, $FW: 400, $CLR: #000000AD, $LH: 24px, $CASE: none);
 }
-
 .show{
     padding-top: 13px;
     height: 72px;

@@ -47,6 +47,15 @@
 .shipping__information-content:nth-child(3){
     flex-direction: row-reverse;
 }
+.shipping__img-wrapper {
+    position: relative;
+}
+.shipping__link {
+    @include buttonsytle($W: 151px, $P: 16px, $BR_RAD: 0, $BG_CLR: $orange-clr, $CLR: white, $FS: 16px, $FW: 600, $LH: 19.36px, $BORDER: none);
+    position: absolute;
+    display: block;
+    top: 1.25em;
+}
 .information__wrapper{
     width: 545px;
 }
