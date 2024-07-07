@@ -8,7 +8,7 @@
     background-attachment: fixed;
 }
 .hero {
-    @include dislpay($DF: flex, $AI, $JC: space-between, $GAP: 85px);
+    @include dislpay($DF: flex, $AI: center, $JC: space-between, $GAP: 85px);
 }
 .hero__form {
     width: 449px;
@@ -24,7 +24,7 @@
 }
 .hero__form-title {
     @include textStyle($MB: 0, $FS: 15px, $FW: 400, $CLR: $white-clr, $LH: 18px, $CASE: capitalize);
-    
+    display: flex;
     margin-top: 15px;
 }
 .form__input{
@@ -84,10 +84,10 @@
     margin-top: 43px;
 }
 .hero__subtitle {
-  @include  textStyle($MB: 0, $FS: 14px, $FW: 500, $CLR: $white-clr, $LH: 16.94px, $CASE: capitalize);
+    @include  textStyle($MB: 0, $FS: 14px, $FW: 500, $CLR: $white-clr, $LH: 16.94px, $CASE: capitalize);
 }
 .hero__title {
-   @include textStyle($MB: 11px, $FS: 56px, $FW: 700, $CLR: $white-clr, $LH: 67.77px, $CASE: capitalize);
+    @include textStyle($MB: 11px, $FS: 56px, $FW: 700, $CLR: $white-clr, $LH: 67.77px, $CASE: capitalize);
 }
 .hero__text {
     @include textStyle($MB: 0, $FS: 20px, $FW: 400, $CLR: $white-clr, $LH: 24.2px, $CASE: capitalize);

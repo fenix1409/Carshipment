@@ -44,6 +44,12 @@
     align-items: center;
     gap: 25px;
 }
+.shipping__information-content:nth-child(3){
+    flex-direction: row-reverse;
+}
+.information__wrapper{
+    width: 545px;
+}
 .information__title {
     color: rgba(0, 0, 0, 0.87);
     margin-bottom: 15px;
