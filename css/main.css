@@ -72,6 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0px;
 }
 
 .header__logo-link {
@@ -88,15 +89,16 @@ body {
 .header__list {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 25px;
 }
 
 .navbar__link {
-  color: #FFFFFF;
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 500;
+  color: #FFFFFF;
   line-height: 19px;
-  letter-spacing: 0%;
   text-transform: uppercase;
   transition: color 0.3s linear;
 }
@@ -113,14 +115,17 @@ body {
 .header__phone-link {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 10px;
 }
 
 .header__phone-number {
-  color: #FFFFFF;
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 500;
+  color: #FFFFFF;
   line-height: 19.36px;
+  text-transform: uppercase;
   transition: all 0.3s linear;
 }
 
@@ -425,6 +430,7 @@ body {
 .pro {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 115px;
 }
 
@@ -434,18 +440,20 @@ body {
 
 .pro__title {
   margin-bottom: 20px;
-  color: white;
   font-size: 38px;
   font-weight: 600;
+  color: white;
   line-height: 40px;
+  text-transform: none;
 }
 
 .pro__text {
-  color: rgb(255, 255, 255);
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 400;
+  color: white;
   line-height: 19px;
-  letter-spacing: 0%;
+  text-transform: none;
 }
 
 .pro__list {
@@ -457,20 +465,22 @@ body {
 }
 
 .count__title {
-  padding: 15px;
-  color: rgb(255, 255, 255);
+  margin-bottom: 0px;
   font-size: 50px;
   font-weight: 600;
+  color: white;
   line-height: 61px;
-  letter-spacing: 0%;
+  text-transform: none;
+  padding: 15px;
 }
 
 .count__text {
-  color: rgb(255, 255, 255);
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 400;
+  color: white;
   line-height: 19px;
-  letter-spacing: 0%;
+  text-transform: none;
 }
 
 .about-section {
@@ -480,6 +490,7 @@ body {
 .about {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 25px;
 }
 
@@ -493,25 +504,27 @@ body {
   margin-bottom: 16px;
   font-size: 38px;
   font-weight: 700;
-  line-height: 45.99px;
   color: black;
+  line-height: 46px;
+  text-transform: none;
 }
 
 .about__subtitle {
-  color: #FF7D44;
   margin-bottom: 16px;
   font-size: 38px;
   font-weight: 700;
-  line-height: 45.99px;
+  color: black;
+  line-height: 46px;
+  text-transform: none;
 }
 
 .about__text {
   margin-bottom: 50px;
-  color: rgba(0, 0, 0, 0.68);
   font-size: 16px;
   font-weight: 300;
+  color: rgba(0, 0, 0, 0.68);
   line-height: 24px;
-  letter-spacing: 0%;
+  text-transform: none;
 }
 
 .about__bg {
@@ -527,9 +540,10 @@ body {
 
 .shipping {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: unset;
   gap: 65px;
+  flex-direction: column;
 }
 
 .shipping__content-wrapper {
@@ -540,34 +554,37 @@ body {
 }
 
 .shipping__title {
-  color: black;
   margin-bottom: 15px;
   font-size: 38px;
   font-weight: 700;
+  color: black;
   line-height: 46px;
+  text-transform: none;
   letter-spacing: 0%;
 }
 
 .shipping__color {
-  color: #FF7D44;
   margin-bottom: 15px;
   font-size: 38px;
   font-weight: 700;
+  color: #FF7D44;
   line-height: 46px;
-  letter-spacing: 0%;
+  text-transform: none;
 }
 
 .shipping__text {
-  color: rgba(0, 0, 0, 0.68);
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.68);
   line-height: 24px;
-  letter-spacing: 0%;
+  text-transform: none;
 }
 
 .shipping__information-content {
   display: flex;
   align-items: center;
+  justify-content: unset;
   gap: 25px;
 }
 
@@ -606,36 +623,39 @@ body {
 }
 
 .information__title {
-  color: rgba(0, 0, 0, 0.87);
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 600;
+  color: rgba(0, 0, 0, 0.87);
   line-height: 29px;
-  letter-spacing: 0%;
+  text-transform: none;
 }
 
 .information__text {
   margin-bottom: 30px;
-  color: rgba(0, 0, 0, 0.68);
   font-size: 16px;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.68);
   line-height: 24px;
-  letter-spacing: 0%;
+  text-transform: none;
 }
 
 .information__link {
   width: 259px;
-  display: inline-block;
   padding: 15px 0;
+  border-radius: 3px;
+  background-color: transparent;
   color: black;
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0%;
-  text-transform: uppercase;
+  text-align: center;
   border: 3px solid rgb(255, 125, 68);
-  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  display: inline-block;
+  text-align: center;
   transition: all 0.3s linear;
 }
 

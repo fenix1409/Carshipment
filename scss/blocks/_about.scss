@@ -3,9 +3,7 @@
     padding: 100px 0 96px;
 }
 .about {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    @include  dislpay($DF: flex, $AI: center, $JC: start, $GAP: 25px);
 }
 .about__content-wrapper {
     width: 543px;
@@ -13,26 +11,13 @@
     flex-direction: column;
 }
 .about__title {
-    margin-bottom: 16px;
-font-size: 38px;
-font-weight: 700;
-line-height: 45.99px;
-color: black;
+    @include textStyle($MB: 16px, $FS: 38px, $FW: 700, $CLR: black, $LH: 46px, $CASE: none);
 }
 .about__subtitle {
-    color: $orange-clr;
-    margin-bottom: 16px;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 45.99px;
+    @include textStyle($MB: 16px, $FS: 38px, $FW: 700, $CLR: black, $LH: 46px, $CASE: none);
 }
 .about__text {
-    margin-bottom: 50px;
-    color: rgba(0, 0, 0, 0.68);
-font-size: 16px;
-font-weight: 300;
-line-height: 24px;
-letter-spacing: 0%;
+    @include textStyle($MB: 50px, $FS: 16px, $FW: 300, $CLR: rgba(0, 0, 0, 0.68), $LH: 24px, $CASE: none);
 }
 .about__bg{
     margin-bottom: 50px;

@@ -5,10 +5,8 @@
     background-position: right top, left bottom;
 }
 .shipping {
-    display: flex;
+    @include dislpay($DF: flex, $AI: center, $JC: unset, $GAP: 65px);
     flex-direction: column;
-    align-items: center;
-    gap: 65px;
 }
 .shipping__content-wrapper {
     width: 769px;
@@ -17,32 +15,17 @@
     text-align: center;
 }
 .shipping__title {
-    color: black;
-    margin-bottom: 15px;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 46px;
+    @include textStyle($MB: 15px, $FS: 38px, $FW: 700, $CLR: black, $LH: 46px, $CASE: none);
     letter-spacing: 0%;
 }
 .shipping__color {
-    color: $orange-clr;
-    margin-bottom: 15px;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 46px;
-    letter-spacing: 0%;
+    @include textStyle($MB: 15px, $FS: 38px, $FW: 700, $CLR: $orange-clr, $LH: 46px, $CASE: none);
 }
 .shipping__text {
-    color: rgba(0, 0, 0, 0.68);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
+    @include textStyle($MB: 0px, $FS: 16px, $FW: 400, $CLR: rgba(0, 0, 0, 0.68), $LH: 24px, $CASE: none);
 }
 .shipping__information-content {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    @include dislpay($DF: flex, $AI: center, $JC: unset, $GAP: 25px);
 }
 .shipping__information-content:nth-child(3){
     flex-direction: row-reverse;
@@ -64,34 +47,15 @@
     width: 545px;
 }
 .information__title {
-    color: rgba(0, 0, 0, 0.87);
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: 0%;
+    @include textStyle($MB: 15px, $FS: 24px, $FW: 600, $CLR: rgba(0, 0, 0, 0.87), $LH: 29px, $CASE: none);
 }
 .information__text {
-    margin-bottom: 30px;
-    color: rgba(0, 0, 0, 0.68);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
+    @include textStyle($MB: 30px, $FS: 16px, $FW: 400, $CLR: rgba(0, 0, 0, 0.68), $LH: 24px, $CASE: none);
 }
 .information__link {
-    width: 259px;
+    @include buttonsytle($W: 259px, $P: 15px, $BR_RAD: 3px, $BG_CLR: transparent, $CLR: black, $FS: 16px, $FW: 500, $LH: 19px, $BORDER:  3px solid rgb(255, 125, 68));
     display: inline-block;
-    padding: 15px 0;
-    color: black;
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    border: 3px solid rgb(255, 125, 68);
-    border-radius: 3px;
     transition: all 0.3s linear;
 }
 .information__link:hover{

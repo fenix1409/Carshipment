@@ -7,31 +7,19 @@
     z-index: 100;
 }
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include dislpay($DF: flex, $AI: center, $JC: space-between, $GAP: 0px);
 }
 .header__logo-link {
     display: inline-block;
 }
 .header__links-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    @include dislpay($DF: flex, $AI: center, $JC: space-between, $GAP: 50px);
 }
 .header__list{
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    @include dislpay($DF: flex, $AI: center, $JC: start, $GAP: 25px);
 }
 .navbar__link {
-    color: $white-clr;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
+    @include textStyle($MB: 0px, $FS: 16px, $FW: 500, $CLR: $white-clr, $LH: 19px, $CASE: uppercase);
     transition: color 0.3s linear;
 }
 .navbar__link:hover{
@@ -42,15 +30,10 @@
     opacity: 0.5;
 }
 .header__phone-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @include dislpay($DF: flex, $AI: center, $JC: start, $GAP: 10px);
 }
 .header__phone-number {
-    color: $white-clr;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
+    @include textStyle($MB: 0px, $FS: 16px, $FW: 500, $CLR: $white-clr, $LH: 19.36px, $CASE: uppercase);
     transition: all 0.3s linear;
 }
 .header__phone-number:hover{

@@ -6,46 +6,25 @@
     background-size: 100% 100%;
 }
 .pro {
-    display: flex;
-    align-items: center;
-    gap: 115px;
+    @include dislpay($DF: flex, $AI: center, $JC: start, $GAP: 115px);
 }
 .pro__content-wrapper {
     width: 347px;
 }
 .pro__title {
-    margin-bottom: 20px;
-    color: white;
-font-size: 38px;
-font-weight: 600;
-line-height: 40px;
+    @include textStyle($MB: 20px, $FS: 38px, $FW: 600, $CLR: white, $LH: 40px, $CASE: none);
 }
 .pro__text {
-    color: rgb(255, 255, 255);
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0%;
+    @include textStyle($MB: 0px, $FS: 16px, $FW: 400, $CLR: white, $LH: 19px, $CASE: none);
 }
 .pro__list {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 54.67px;
+    @include dislpay($DF: flex, $AI: center, $JC: start, $GAP: 54.67px);
     text-align: center;
 }
 .count__title {
+    @include textStyle($MB: 0px, $FS: 50px, $FW: 600, $CLR: white, $LH: 61px, $CASE: none);
     padding: 15px;
-    color: rgb(255, 255, 255);
-font-size: 50px;
-font-weight: 600;
-line-height: 61px;
-letter-spacing: 0%;
 }
 .count__text {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0%;
+    @include textStyle($MB: 0px, $FS: 16px, $FW: 400, $CLR: white, $LH: 19px, $CASE: none);
 }
